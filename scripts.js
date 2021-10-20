@@ -9,7 +9,7 @@ startBTN.addEventListener('click', (startEvent) => {startEvent.target.hidden = t
 
 //use the value stored in the nextPlayer variable to indicate who the next player is
 let playerText = document.getElementById('next-lbl');
-playerText.innerHTML = nextPlayer;
+playerText.innerHTML = 'O';
 
 
 //This call will create the buttons needed for the gameboard.
@@ -60,7 +60,7 @@ function takeCell(event)
         // let the lable with the id 'game-over-lbl' display the words 'Game Over' inside <h1> element
         let label = document.getElementById('game-over-lbl');
         let nH = document.createElement('h1');
-        nH.innerText = 'Game Over, the winner is the player which connected 3 symbols in a row column or diagonal';
+        nH.innerText = 'Game Over, the winner is the player which connected 3 symbols in a row, column or diagonal';
         label.appendChild(nH);
     }
 
